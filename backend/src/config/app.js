@@ -1,4 +1,5 @@
-const port = 3003
+
+const port = APP_URL
 
 const bodyParser = require('body-parser')
 const express = require('express')
