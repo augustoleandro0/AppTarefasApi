@@ -1,5 +1,4 @@
-
-const port = APP_URL
+const port = 3003
 
 const bodyParser = require('body-parser')
 const express = require('express')
@@ -12,7 +11,7 @@ app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json())
 app.use(allowCors)
 
-app.listen(process.env.PORT || port, function() {
+app.listen(process.env.PORT, port, function() {
      console.log(`Backend, running on ${port}. `);
 })
 
